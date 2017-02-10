@@ -53,26 +53,11 @@ nav{
 	background-size: cover;
 }
 
-@media screen and (max-width: 980px){
-	.header-image{
-		height: 40%;
-	}
-}
-
 .about-us, .we-recommend{
 	padding: 4rem;
 	padding-top: 10rem;
 	color: $white;
 }
-
-@media screen and (max-width: 1280px){
-	.about-us, .we-recommend{
-		padding: 2rem;
-		padding-top: 8rem;
-	}
-
-}
-
 
 .we-recommend{
 	a{
@@ -91,24 +76,6 @@ nav{
 	border-radius: 5px;
 }
 
-@media screen and (max-width: 1280px){
-	.seperator{
-		width: 90%;
-	}
-}
-
-@media screen and (max-width: 980px){
-	.about-us, .we-recommend{
-		padding: 4rem 5rem;
-		padding-top: 5rem;
-		padding-bottom: 0rem;
-	}
-
-	.seperator{
-		width: 90%;
-	}
-}
-
 
 .footer{
 	padding: 2rem 4rem;
@@ -116,6 +83,38 @@ nav{
 	.footer-logo{
 	    font-family: 'Open Sans Condensed', sans-serif;
 		color: white;
+	}
+}
+
+@media screen and (max-width: 1280px){
+	.about-us, .we-recommend{
+		padding: 2rem;
+		padding-top: 8rem;
+	}
+
+	.seperator{
+		width: 90%;
+	}
+
+}
+
+@media screen and (max-width: 980px){
+	.header-image{
+		height: 40%;
+	}
+
+	.about-us, .we-recommend{
+		padding: 4rem 5rem;
+		padding-top: 5rem;
+		padding-bottom: 0rem;
+	}
+
+	.seperator{
+		width: 85%;
+	}
+
+	.footer{
+		padding: 2rem 8rem;
 	}
 }
 
@@ -140,8 +139,7 @@ nav{
 			font-size: 1.5rem;
 		}
 	}
-}
-@media screen and (max-width: 480px){	
+
 	.header-logo-container{
 		.header-logo{
 			width: 40%;
