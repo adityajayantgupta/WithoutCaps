@@ -1,0 +1,81 @@
+@import '../../../style/style';
+
+.product-container{
+	margin-top: 2rem;
+}
+.product{
+	overflow: hidden;
+	height: 56vh;
+	padding: 0;
+	text-align: center;
+	box-shadow: 0 0 1rem black;
+
+	a{	
+		color: white;
+
+		.product-image{
+			height: 40vh;
+			background: url('../res/lesson-sch-bg.jpg');
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.product-description{
+			padding: 2rem;
+			background: #3B4538;
+			transition: 0.3s;
+
+			h5{
+				font-size: 1rem;
+			}
+
+			h6{
+				font-size: 0.95rem;
+			}
+		}
+	}
+}
+.product:nth-child(1){
+	width: 40%;
+	.product-image{
+			background: url('../res/sys-mon-bg.jpg');
+			background-size: cover;
+		}
+}
+.product:nth-child(2){
+	width: 55%;
+	.product-description{
+		padding: 2rem 0;
+	}
+}
+.product:hover{
+	.product-description{
+		background: $green;
+	}
+}
+
+.contact-container{
+	margin: 2rem 0;
+	padding: 4rem 0;
+	text-align: center;
+	color: white;
+	background: $green;
+
+	.contact-text{
+		margin: 1rem;
+		margin-bottom: 5rem;
+
+		h1{
+			font-family: 'Open Sans Condensed', sans-serif;
+		}
+	}
+
+	a{
+		padding: 1rem 2rem;
+		border: 2px solid white;
+		color: white;
+		transition: 0.3s;
+	}
+	a:hover{
+		border: 2px solid black;
+	}
+}
