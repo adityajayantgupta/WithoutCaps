@@ -20,7 +20,23 @@
 		<a href="javascript:void(0)">Contact</a>
 	</nav>
 
-	<div class="header-image"></div>
+	<div class="header-image">
+		<!-- Image Slider -->
+		<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
+	        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
+	            <div>
+	                <img data-u="image" src="res/header-image-1.png" />
+	            </div>
+	            <div>
+	                <img data-u="image" src="res/header-image-2.jpg" />
+	            </div>
+		        <!-- Bullet Navigator -->
+		        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;">
+		            <div data-u="prototype" style="width:12px;height:12px;"></div>
+		        </div>		   
+		  	</div>
+		</div>
+	</div>
 
 	<div class="row bottom">
 		<div class="large-8 columns about-us">
@@ -44,6 +60,10 @@
 			</h3>
 		</div>
 	</div>
+	
+	<script type="text/javascript" src="js/jssor.min.js"></script>
+	<script type="text/javascript" src="js/slider.js"></script>
+	<script type="text/javascript">jssor_1_slider_init();</script>
 
 </body>
 </html>
