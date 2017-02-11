@@ -1,5 +1,9 @@
 @import '../../../style/style';
 
+body{
+	min-width: 480px;
+}
+
 .product-container{
 	margin-top: 2rem;
 }
@@ -77,5 +81,78 @@
 	}
 	a:hover{
 		border: 2px solid black;
+	}
+}
+
+@media screen and (max-width: 980px){
+	.product-container{
+		margin: 2rem;
+	}
+	.product{
+		height: 26vh;
+
+		a{
+			.product-image{
+				height: 18.75vh;
+			}
+			.product-description{
+				padding: 1rem;
+			}
+		}
+	}
+	.product:nth-child(2){
+		.product-description{
+			padding: 0.5rem;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.product{
+		a{
+			.product-description{
+				padding: 0.5rem;
+				h6{
+					font-size: 0.8rem;
+				}
+			}
+		}
+	}
+
+	.contact-container{
+		padding: 3rem;
+
+		.contact-text{
+			margin: 0;
+			margin-bottom: 2rem;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+	.product{
+		background-color:#3B4538;
+		height: 30vh;
+		a{
+			.product-image{
+				height: 17vh;
+			}	
+		}
+	}
+
+	.contact-container{
+		padding: 2rem;
+
+		.contact-text{
+			margin: 0;
+			margin-bottom: 1rem;
+		}
+
+		a{
+			padding: 0.5rem 1rem;
+			border: 2px solid white;
+			color: white;
+			transition: 0.3s;
+		}
 	}
 }
