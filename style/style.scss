@@ -58,7 +58,11 @@ nav{
 }
 
 .we-recommend{
+	h6{
+		color: $green;
+	}
 	a{
+		margin: 1rem;
 		color: $green;
 		transition: 0.3s;
 	}
