@@ -47,3 +47,36 @@
 		}
 	}
 }
+
+@media screen and (max-width: 980px){
+	.downloads{
+		.download{
+			height: 20vh;
+		}
+	}
+}
+
+@media screen and (max-width: 800px){
+	.download{
+		h4{
+			font-size: 1.25rem;
+		}
+	}
+}
+
+@media screen and (max-width: 768px){
+	.downloads{
+		.download{
+			padding: 2.5rem 1rem;
+		}
+	}
+}
+
+@media screen and (max-width: 480px){
+	.downloads{
+			.download{
+			height: 25vh;
+			padding: 2rem 1rem;
+		}
+	}
+}
