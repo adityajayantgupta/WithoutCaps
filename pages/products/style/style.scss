@@ -10,7 +10,7 @@ body {
 
 .product {
 	overflow: hidden;
-	height: 56vh;
+	height: 53vh;
 	padding: 0;
 	text-align: center;
 	box-shadow: 0 0 1rem black;
@@ -19,7 +19,7 @@ body {
 		.product-image {
 			height: 40vh;
 			background: url('../res/lesson-sch-bg.jpg');
-			background-size: cover;
+			background-size: 100% 100%;
 			background-repeat: no-repeat;
 		}
 		.product-description {
@@ -40,7 +40,7 @@ body {
 	width: 40%;
 	.product-image {
 		background: url('../res/sys-mon-bg.jpg');
-		background-size: cover;
+		background-size: 100% 100%;
 	}
 }
 
