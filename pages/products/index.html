@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Without Caps</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../style/foundation.min.css" />
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
-<body>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
+<body location="Products">
+	<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+			':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
 	<div class="row header-logo-container">
 		<img class="header-logo" src="../../res/logo.png" />
 	</div>
-
 	<nav>
-		<a href="../../index.html">Home</a>
-		<a href="javascript:void(0)">Products</a>
-		<a href="javascript:void(0)">FAQ</a>
-		<a href="javascript:void(0)">Contact</a>
+		<a href="../../index.html" class="nav-link">Home</a>
+		<a href="../products/index.html" class="nav-link">Products</a>
+		<a href="../faq/index.html" class="nav-link">FAQ</a>
+		<a href="../contact/index.html" class="nav-link">Contact</a>
 	</nav>
-	
 	<div class="row product-container">
 		<div class="large-5 columns product">
 			<a href="sys-mon/index.html">
@@ -40,14 +42,13 @@
 			</a>
 		</div>
 	</div>
-		<div class="contact-container">
-			<div class="contact-text">
-				<h1>Issues?</h1>
-				<h6>Contact us and we will resolve provided issues as soon as possible</h6>
-			</div>
-			<a href="../contacts/index.html">CONTACT</a>
+	<div class="contact-container">
+		<div class="contact-text">
+			<h1>Issues?</h1>
+			<h6>Contact us and we will resolve provided issues as soon as possible</h6>
 		</div>
-
+		<a href="../contacts/index.html">CONTACT</a>
+	</div>
 	<div class="row bottom">
 		<div class="large-8 columns about-us">
 			<h4>About Us</h4>
@@ -60,9 +61,7 @@
 			</h6>
 		</div>
 	</div>
-	
 	<hr class="seperator" noshade>
-
 	<div class="row">
 		<div class="footer">
 			<h3 class="footer-logo">
@@ -70,6 +69,16 @@
 			</h3>
 		</div>
 	</div>
-
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<!-- Underlines the currently active page -->
+	<script>
+		var link = $('.nav-link');
+		link.each(function () {
+			if ($("body").attr('location') == $(this).html()) {
+				$(this).css("border-bottom", "2px solid white");
+			}
+		});
+	</script>
 </body>
+
 </html>

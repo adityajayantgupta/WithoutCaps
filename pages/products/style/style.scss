@@ -1,155 +1,145 @@
 @import '../../../style/style';
-
-body{
+body {
 	min-width: 480px;
 	max-width: 1920px;
 }
 
-.product-container{
+.product-container {
 	margin-top: 2rem;
 }
-.product{
+
+.product {
 	overflow: hidden;
 	height: 56vh;
 	padding: 0;
 	text-align: center;
 	box-shadow: 0 0 1rem black;
-
-	a{	
+	a {
 		color: white;
-
-		.product-image{
+		.product-image {
 			height: 40vh;
 			background: url('../res/lesson-sch-bg.jpg');
 			background-size: cover;
 			background-repeat: no-repeat;
 		}
-		.product-description{
+		.product-description {
 			padding: 2rem;
 			background: #3B4538;
 			transition: 0.3s;
-
-			h5{
+			h5 {
 				font-size: 1rem;
 			}
-
-			h6{
+			h6 {
 				font-size: 0.95rem;
 			}
 		}
 	}
 }
-.product:nth-child(1){
+
+.product:nth-child(1) {
 	width: 40%;
-	.product-image{
-			background: url('../res/sys-mon-bg.jpg');
-			background-size: cover;
-		}
+	.product-image {
+		background: url('../res/sys-mon-bg.jpg');
+		background-size: cover;
+	}
 }
-.product:nth-child(2){
+
+.product:nth-child(2) {
 	width: 55%;
-	.product-description{
+	.product-description {
 		padding: 2rem 0;
 	}
 }
-.product:hover{
-	.product-description{
+
+.product:hover {
+	.product-description {
 		background: $green;
 	}
 }
 
-.contact-container{
+.contact-container {
 	margin: 2rem 0;
 	padding: 4rem 0;
 	text-align: center;
 	color: white;
 	background: $green;
-
-	.contact-text{
+	.contact-text {
 		margin: 1rem;
 		margin-bottom: 5rem;
-
-		h1{
+		h1 {
 			font-family: 'Open Sans Condensed', sans-serif;
 		}
 	}
-
-	a{
+	a {
 		padding: 1rem 2rem;
 		border: 2px solid white;
 		color: white;
 		transition: 0.3s;
 	}
-	a:hover{
+	a:hover {
 		border: 2px solid black;
 	}
 }
 
-@media screen and (max-width: 980px){
-	.product-container{
+@media screen and (max-width: 980px) {
+	.product-container {
 		margin: 2rem;
 	}
-	.product{
+	.product {
 		height: 26vh;
-
-		a{
-			.product-image{
+		a {
+			.product-image {
 				height: 18.75vh;
 			}
-			.product-description{
+			.product-description {
 				padding: 1rem;
 			}
 		}
 	}
-	.product:nth-child(2){
-		.product-description{
+	.product:nth-child(2) {
+		.product-description {
 			padding: 0.5rem;
 		}
 	}
 }
 
-@media screen and (max-width: 768px){
-	.product{
-		a{
-			.product-description{
+@media screen and (max-width: 768px) {
+	.product {
+		a {
+			.product-description {
 				padding: 0.5rem;
-				h6{
+				h6 {
 					font-size: 0.8rem;
 				}
 			}
 		}
 	}
-
-	.contact-container{
+	.contact-container {
 		padding: 3rem;
-
-		.contact-text{
+		.contact-text {
 			margin: 0;
 			margin-bottom: 2rem;
 		}
 	}
 }
 
-@media screen and (max-width: 480px){
-	.product{
-		background-color:#3B4538;
+@media screen and (max-width: 480px) {
+	.product {
+		background-color: #3B4538;
 		height: 30vh;
-		a{
-			.product-image{
+		a {
+			.product-image {
 				height: 17vh;
-			}	
+			}
 		}
 	}
-
-	.contact-container{
+	.contact-container {
 		padding: 2rem;
-
-		.contact-text{
+		.contact-text {
 			margin: 0;
 			margin-bottom: 1rem;
 		}
-
-		a{
+		a {
 			padding: 0.5rem 1rem;
 			border: 2px solid white;
 			color: white;

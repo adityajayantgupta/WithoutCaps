@@ -1,45 +1,46 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 	<title>Without Caps</title>
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style/foundation.min.css" />
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
-<body>
-	<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 
+<body location="Home">
+	<script>
+		document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] +
+			':35729/livereload.js?snipver=1"></' + 'script>')
+	</script>
 	<div class="row header-logo-container">
 		<img class="header-logo" src="res/logo.png" />
 	</div>
-
 	<nav>
-		<a href="javascript:void(0)">Home</a>
-		<a href="pages/products/index.html">Products</a>
-		<a href="pages/faq/index.html">FAQ</a>
-		<a href="javascript:void(0)">Contact</a>
+		<a href="javascript:void(0)" class="nav-link">Home</a>
+		<a href="pages/products/index.html" class="nav-link">Products</a>
+		<a href="pages/faq/index.html" class="nav-link">FAQ</a>
+		<a href="pages/contact/index.html" class="nav-link">Contact</a>
 	</nav>
-
 	<div class="row">
 		<div class="header-image">
 			<!-- Image Slider -->
 			<div id="jssor_1" style="position:relative;margin:0 auto;top:0px;left:0px;width:600px;height:300px;overflow:hidden;visibility:hidden;">
-		        <div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
-		            <div>
-		                <img data-u="image" src="res/header-image-1.png" />
-		            </div>
-		            <div>
-		                <img data-u="image" src="res/header-image-2.jpg" />
-		            </div>
-			        <!-- Bullet Navigator -->
-			        <div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;">
-			            <div data-u="prototype" style="width:12px;height:12px;"></div>
-			        </div>		   
-			  	</div>
+				<div data-u="slides" style="cursor:default;position:relative;top:0px;left:0px;width:600px;height:300px;overflow:hidden;">
+					<div>
+						<img data-u="image" src="res/header-image-1.png" />
+					</div>
+					<div>
+						<img data-u="image" src="res/header-image-2.jpg" />
+					</div>
+					<!-- Bullet Navigator -->
+					<div data-u="navigator" class="jssorb05" style="bottom:16px;right:16px;">
+						<div data-u="prototype" style="width:12px;height:12px;"></div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-
 	<div class="row bottom">
 		<div class="large-8 columns about-us">
 			<h4>About Us</h4>
@@ -48,13 +49,12 @@
 		<div class="large-4 columns we-recommend">
 			<h4>We Recommend</h4>
 			<h6>
-				&#9633 <a href="https://devtools.bunifu.co.ke/" target="_blank">Bunifu UI Framework</a> <!-- &#9633 is the HTML entity for an empty square -->
+				&#9633 <a href="https://devtools.bunifu.co.ke/" target="_blank">Bunifu UI Framework</a>
+				<!-- &#9633 is the HTML entity for an empty square -->
 			</h6>
 		</div>
 	</div>
-	
 	<hr class="seperator" noshade>
-
 	<div class="row">
 		<div class="footer">
 			<h3 class="footer-logo">
@@ -62,10 +62,23 @@
 			</h3>
 		</div>
 	</div>
-	
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script type="text/javascript" src="js/jssor.min.js"></script>
 	<script type="text/javascript" src="js/slider.js"></script>
-	<script type="text/javascript">jssor_1_slider_init();</script>
+	<script type="text/javascript">
+		jssor_1_slider_init();
+	</script>
+
+	<!-- Underlines the currently active page -->
+	<script>
+		var link = $('.nav-link');
+		link.each(function(){
+			if ($("body").attr('location') == $(this).html()){
+				$(this).css("border-bottom", "2px solid white");
+			}
+		});
+	</script>
 
 </body>
+
 </html>

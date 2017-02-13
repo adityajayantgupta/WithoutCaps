@@ -1,0 +1,80 @@
+@import '../../products/sys-mon/style/style';
+.contact-form-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem;
+    border: 2px solid grey;
+    color: white;
+    form {
+        font-size: 0.9rem;
+        input,
+        textarea {
+            border: 2px solid #20241E;
+            font-size: 0.8rem;
+            color: white;
+            background: #20241E;
+            transition: 0.3s;
+        }
+        textarea {
+            resize: none;
+            height: 15vh;
+        }
+        input:hover,
+        input:focus,
+        textarea:hover,
+        textarea:focus {
+            border: 2px solid grey;
+            background: $black;
+            box-shadow: none;
+        }
+        input::placeholder,
+        textarea::placeholder {
+            color: grey;
+        }
+        input[type="submit"] {
+            padding: 0.75rem 1.5rem;
+            color: white;
+            background: transparent;
+            border: 2px solid $green;
+            font-size: 0.9rem;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        input[type="submit"]:hover {
+            background: $green;
+        }
+    }
+}
+
+.contact-container {
+    padding: 5rem;
+    a {
+        margin: 0 0.5rem;
+        padding: 1rem 1.25rem;
+        font-size: 1.25rem;
+        border: none;
+        background: $black;
+    }
+    a:nth-child(1) {
+        padding: 1rem 1.5rem;
+    }
+    a:hover {
+        border: none;
+        background: #44C71C;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .contact-form-container {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .contact-form-container {
+        padding: 1.5rem;
+        h3 {
+            font-size: 1.5rem;
+        }
+    }
+}
