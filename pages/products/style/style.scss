@@ -81,6 +81,17 @@ body {
 	}
 }
 
+@media screen and (max-width: 1366px) {
+	.product {
+		height: 56vh;
+		a {
+			.product-image {
+				height: 40vh;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: 980px) {
 	.product-container {
 		margin: 2rem;
