@@ -47,14 +47,14 @@ nav {
   padding-top: 10rem;
   color: #EEEEEE; }
 
-.we-recommend h6 {
+.we-recommend h6 li {
+  list-style-type: disc;
   color: #38A317; }
-.we-recommend a {
-  margin: 1rem;
-  color: #38A317;
-  transition: 0.3s; }
-.we-recommend a:hover {
-  color: #EEEEEE; }
+  .we-recommend h6 li a {
+    color: #38A317;
+    transition: 0.3s; }
+  .we-recommend h6 li a:hover {
+    color: #EEEEEE; }
 
 .seperator {
   width: 80%;
