@@ -66,8 +66,6 @@ nav {
 
 .we-recommend {
 	h6 {
-		li {
-			list-style-type: disc;
 			color: $green;
 			a {
 				color: $green;
@@ -76,7 +74,6 @@ nav {
 			a:hover {
 				color: $white;
 			}
-		}
 	}
 }
 
