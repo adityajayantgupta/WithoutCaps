@@ -10,10 +10,12 @@ body {
 
 .product {
 	overflow: hidden;
-	height: 43vh;
+	height: 45vh;
 	padding: 0;
 	text-align: center;
 	box-shadow: 0 0 1rem black;
+	background-color: #3B4538;
+	transition: 0.3s;
 	a {
 		color: white;
 		.product-image {
@@ -23,9 +25,7 @@ body {
 			background-repeat: no-repeat;
 		}
 		.product-description {
-			padding: 2rem;
-			background: #3B4538;
-			transition: 0.3s;
+			padding: 2rem 4rem;
 			h5 {
 				font-size: 1rem;
 			}
@@ -46,15 +46,10 @@ body {
 
 .product:nth-child(2) {
 	width: 52%;
-	.product-description {
-		padding: 2rem 0;
-	}
 }
 
 .product:hover {
-	.product-description {
-		background: $green;
-	}
+	background-color: $green;
 }
 
 .contact-container {
@@ -156,5 +151,10 @@ body {
 			color: white;
 			transition: 0.3s;
 		}
+	}
+}
+@media screen and (max-width: 480px){
+	.product{
+		width: 100%;
 	}
 }

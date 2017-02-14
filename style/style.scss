@@ -60,6 +60,10 @@ nav {
 	color: $white;
 }
 
+.about-us {
+	padding-left: 0;
+}
+
 .we-recommend {
 	h6 {
 		li {
@@ -87,6 +91,12 @@ nav {
 	.footer-logo {
 		font-family: 'Open Sans Condensed', sans-serif;
 		color: white;
+	}
+}
+
+@media screen and (max-width: 1366px) {
+	.about-us{
+		padding-left: 4rem;
 	}
 }
 
