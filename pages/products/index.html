@@ -3,8 +3,8 @@
 
 <head>
 	<title>Without Caps - Products</title>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/> 
+	<meta charset="utf-8" />
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="../../style/foundation.min.css" />
 	<link rel="stylesheet" type="text/css" href="style/style.css" />
@@ -24,24 +24,26 @@
 		<a href="../faq/index.html" class="nav-link">FAQ</a>
 		<a href="../contact/index.html" class="nav-link">Contact</a>
 	</nav>
-	<div class="row product-container">
-		<div class="large-5 columns product">
-			<a href="sys-mon/index.html">
-				<div class="product-image"></div>
-				<div class="product-description">
-					<h5>SYSTEM MONITOR</h5>
-					<h6>Quick and easy way to monitor your system</h6>
-				</div>
-			</a>
-		</div>
-		<div class="large-7 columns product">
-			<a href="lessons-sch/index.html">
-				<div class="product-image"></div>
-				<div class="product-description">
-					<h5>LESSONS SCHEDULE</h5>
-					<h6>Still a student? Having trouble keeping track of your lessons? This is the perfect solution for you!</h6>
-				</div>
-			</a>
+	<div class="row">
+		<div class="product-container">
+			<div class="large-5 columns product" id="col-1">
+				<a href="sys-mon/index.html">
+					<div class="product-image"></div>
+					<div class="product-description">
+						<h5>SYSTEM MONITOR</h5>
+						<h6>Quick and easy way to monitor your system</h6>
+					</div>
+				</a>
+			</div>
+			<div class="large-7 columns product data-equalizer-watch" id="col-2">
+				<a href="lessons-sch/index.html">
+					<div class="product-image"></div>
+					<div class="product-description">
+						<h5>LESSONS SCHEDULE</h5>
+						<h6>Still a student? Having trouble keeping track of your lessons? This is the perfect solution for you!</h6>
+					</div>
+				</a>
+			</div>
 		</div>
 	</div>
 	<div class="contact-container">
@@ -72,6 +74,22 @@
 		</div>
 	</div>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script>
+		// function to equalize the heights of the products
+		function setEqualHeight() {
+			var col_1 = $('#col-1');
+			var col_2 = $('#col-2');
+			var col_1_h = col_1.css('height');
+			var col_2_h = col_2.css('height');
+			if (col_1 > col_2) {
+				col_2.css('height', col_1_h);
+			} else {
+				col_1.css('height', col_2_h);
+			}
+		}
+		setEqualHeight();
+		window.onresize = setEqualHeight;
+	</script>
 	<!-- Underlines the currently active page -->
 	<script>
 		var link = $('.nav-link');

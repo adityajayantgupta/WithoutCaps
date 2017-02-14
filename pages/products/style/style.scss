@@ -5,12 +5,11 @@ body {
 }
 
 .product-container {
-	margin-top: 2rem;
+	margin: 2rem;
 }
 
 .product {
 	overflow: hidden;
-	height: 45vh;
 	padding: 0;
 	text-align: center;
 	box-shadow: 0 0 1rem black;
@@ -76,9 +75,8 @@ body {
 	}
 }
 
-@media screen and (max-width: 1366px) {
+@media screen and (width: 1366px) {
 	.product {
-		height: 56vh;
 		a {
 			.product-image {
 				height: 40vh;
@@ -92,7 +90,6 @@ body {
 		margin: 2rem;
 	}
 	.product {
-		height: 26vh;
 		a {
 			.product-image {
 				height: 18.75vh;
@@ -132,7 +129,6 @@ body {
 @media screen and (max-width: 480px) {
 	.product {
 		background-color: #3B4538;
-		height: 30vh;
 		a {
 			.product-image {
 				height: 17vh;
@@ -153,8 +149,9 @@ body {
 		}
 	}
 }
-@media screen and (max-width: 480px){
-	.product{
+
+@media screen and (max-width: 480px) {
+	.product {
 		width: 100%;
 	}
 }
