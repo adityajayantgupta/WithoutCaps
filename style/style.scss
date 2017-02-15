@@ -56,6 +56,7 @@ nav {
 .about-us,
 .we-recommend {
 	padding: 4rem;
+	padding-left: 3.3rem; 	//to align it just at the starting of the seperator
 	padding-top: 10rem;
 	color: $white;
 }
@@ -84,6 +85,12 @@ nav {
 	.footer-logo {
 		font-family: 'Open Sans Condensed', sans-serif;
 		color: white;
+	}
+}
+
+@media screen and (max-width: 1366px){
+	.about-us{
+		padding-left: 4rem;
 	}
 }
 
