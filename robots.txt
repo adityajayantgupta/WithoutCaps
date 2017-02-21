@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /sitemap.xml
+Disallow: /res/
+Disallow: /pages/contact/email.php
+Disallow: /pages/products/files/
