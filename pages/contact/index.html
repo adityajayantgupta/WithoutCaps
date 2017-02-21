@@ -2,82 +2,98 @@
 <html>
 
 <head>
-	<title>Without Caps - Contact</title>
-	<meta charset="utf-8"/>
-	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width"/> 
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="../../style/foundation.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/style.css" />
+    <title>Without Caps - Contact</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans:300" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../../style/foundation.min.css" />
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
 </head>
 
 <body location="Contact">
-	
-	<div class="row header-logo-container">
-		<img class="header-logo" src="../../res/logo.png" />
-	</div>
-	<nav>
-		<a href="../../index.html" class="nav-link">Home</a>
-		<a href="../products/index.html" class="nav-link">Products</a>
-		<a href="../faq/index.html" class="nav-link">FAQ</a>
-		<a href="javascript:void(0)" class="nav-link">Contact</a>
-	</nav>
-	<div class="contact-form-container row">
-		<form>
-			<h3>Send us a message</h3>
-			<legend>Name</legend>
-			<input type="text" name="Name" placeholder="Name" required/>
-			<legend>Email</legend>
-			<input type="email" name="Email" placeholder="Email" required/>
-			<legend>Subject</legend>
-			<input type="text" name="Subject" placeholder="Subject" required/>
-			<legend>Message</legend>
-			<textarea placeholder="Message" name="Message"></textarea>
-			<br/>
-			<i>All fields are required</i>
-			<br/>
-			<br/>
-			<input type="submit" value="SEND">
-		</form>
-	</div>
-	<div class="contact-container">
-		<a href="https://www.facebook.com/withoutcapsdev/"><i class="fa fa-facebook"></i></a>
-		<a href=""><i class="fa fa-twitter"></i></a>
-		<a href=""><i class="fa fa-google"></i></a>
-		<a href=""><i class="fa fa-linkedin"></i></a>
-	</div>
-	<div class="row bottom">
-		<div class="large-8 columns about-us">
-			<h4>About Us</h4>
-			<h6>We create computer and mobile solutions for people around the world that solve everyday problems</h6>
-		</div>
-		<div class="large-4 columns we-recommend">
-			<h4>We Recommend</h4>
-			<h6>
+
+    <div class="row header-logo-container">
+        <img class="header-logo" src="../../res/logo.png" />
+    </div>
+    <nav>
+        <a href="../../" class="nav-link">Home</a>
+        <a href="../products/" class="nav-link">Products</a>
+        <a href="../faq/" class="nav-link">FAQ</a>
+        <a href="javascript:void(0)" class="nav-link">Contact</a>
+    </nav>
+    <div class="contact-form-container row">
+        <form action="email.php" method="get">
+            <h3>Send us a message</h3>
+            <legend>Name</legend>
+            <input type="text" name="Name" placeholder="Name" required/>
+            <legend>Email</legend>
+            <input type="email" name="Email" placeholder="Email" required/>
+            <legend>Subject</legend>
+            <input type="text" name="Subject" placeholder="Subject" required/>
+            <legend>Message</legend>
+            <textarea placeholder="Message" name="Message"></textarea>
+            <br/>
+            <i>All fields are required</i>
+            <br/>
+            <br/>
+            <input type="submit" value="SEND">
+        </form>
+    </div>
+    <div class="contact-container">
+        <a href="https://www.facebook.com/withoutcapsdev/"><i class="fa fa-facebook"></i></a>
+        <a href=""><i class="fa fa-twitter"></i></a>
+        <a href=""><i class="fa fa-google"></i></a>
+        <a href=""><i class="fa fa-linkedin"></i></a>
+    </div>
+    <div class="row bottom">
+        <div class="large-8 columns about-us">
+            <h4>About Us</h4>
+            <h6>We create computer and mobile solutions for people around the world that solve everyday problems</h6>
+        </div>
+        <div class="large-4 columns we-recommend">
+            <h4>We Recommend</h4>
+            <h6>
 				&#9679 <a href="https://devtools.bunifu.co.ke/" target="_blank">&nbsp; Bunifu UI Framework</a>
 				<!-- &#9633 is the HTML entity for an empty square -->
 			</h6>
-		</div>
-	</div>
-	<hr class="seperator" noshade>
-	<div class="row">
-		<div class="footer">
-			<h3 class="footer-logo">
+        </div>
+    </div>
+    <hr class="seperator" noshade>
+    <div class="row">
+        <div class="footer">
+            <h3 class="footer-logo">
 				<span class="green">Without</span>Caps
 			</h3>
-		</div>
-	</div>
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script type="text/javascript" src="js/jquery-ui.js"></script>
-	<script src="https://use.fontawesome.com/933f3f7a65.js"></script>
-	<!-- Underlines the currently active page -->
-	<script>
-		var link = $('.nav-link');
-		link.each(function () {
-			if ($("body").attr('location') == $(this).html()) {
-				$(this).css("border-bottom", "2px solid white");
-			}
-		});
-	</script>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
+    <script src="https://use.fontawesome.com/933f3f7a65.js"></script>
+    <!-- Underlines the currently active page -->
+    <script>
+        var link = $('.nav-link');
+        link.each(function() {
+            if ($("body").attr('location') == $(this).html()) {
+                $(this).css("border-bottom", "2px solid white");
+            }
+        });
+
+    </script>
+    <script>
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+        ga('create', 'UA-83693924-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
 </body>
 
 </html>
